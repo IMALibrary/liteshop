@@ -24,8 +24,9 @@ const exitAudio = new Audio();
 exitAudio.src = 'assets/sounds/back.mp3';
 exitAudio.load();
 
+openingAudio.play();
+
 if(intro.classList.contains('active')){
-    openingAudio.play();
     setTimeout(()=>{
         intro.classList.remove('active');
         openingAudio.pause();
